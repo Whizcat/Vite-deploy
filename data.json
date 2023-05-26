@@ -1,0 +1,41 @@
+{
+    "user" : {
+        "fullName": "Thabo Martins",
+        "photo" : "/images/thabo.jpg"
+    },
+    "city" : {
+        "name" : "Philadelphia",
+        "photo" : "/images/Philly-homie.jpg",
+        "description" : "Philadelphia is the largest city in the state of Pennsylvania, Its name means brotherly love.sitting alongside the Delaware River."
+    },
+    "foreignLanguage" : {
+        "language" : " Portuguese, Spanish, Korean",
+        "phrases" : [{
+            "englishPhrase" : "I Love school",
+            "foreignLanguage" : "eu adoro a escola"
+        },
+        {
+            "englishPhrase" : "I want to study law.",
+            "foreignLanguage" : "quiero estudiar derecho"
+        },
+        {
+                "englishPhrase" : "I am now tired.",
+                "foreignLanguage" : "나는 지금 피곤하다"
+                
+        }]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "Law of contract",
+            "description" : "Contract law provides a legal framework within which persons can transact business and exchange resources, secure in the knowledge that the law will uphold their agreements and, if necessary, enforce them"
+        },
+        {
+            "name" : "Law of Evidence",
+            "description" : "rules and legal principles that govern the proof of facts in a legal proceeding."
+        },
+        {
+            "name" : "Law of persons",
+            "description" : "Law of persons is that part of private law that determines which entities have legal rights and capacities"
+        }
+    ]
+}
