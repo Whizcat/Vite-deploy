@@ -30,5 +30,8 @@
   "devDependencies": {
     "vite": "^4.3.8",
     "vite-plugin-handlebars": "^1.6.0"
+  },
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
   }
 }
