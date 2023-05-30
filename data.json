@@ -1,7 +1,9 @@
 {
     "user" : {
         "fullName": "Thabo Martins",
-        "photo" : "./images/thabo.jpg"
+        "photo" : "./images/thabo.jpg",
+        "course":"LLB",
+        "institution":"Wits university"
     },
     "city" : {
         "name" : "Philadelphia",
