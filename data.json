@@ -1,11 +1,11 @@
 {
     "user" : {
         "fullName": "Thabo Martins",
-        "photo" : "/images/thabo.jpg"
+        "photo" : "./images/thabo.jpg"
     },
     "city" : {
         "name" : "Philadelphia",
-        "photo" : "/images/Philly-homie.jpg",
+        "photo" : "./images/Philly-homie.jpg",
         "description" : "Philadelphia is the largest city in the state of Pennsylvania, Its name means brotherly love.sitting alongside the Delaware River."
     },
     "foreignLanguage" : {
