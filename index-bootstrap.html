@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> Thabo Martins</title>
+  <title> Thabo Martins Simon</title>
 
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +15,15 @@
 
   <style>
     body {
+      color: black;
       background-image: url(./images/tablemountain.jpg);
+      background-size: fixed;
       /* color: black; */
     }
 
+    main{
+      background-color: rgba(255, 255, 255, 0.4)
+    }
 
     .textColor {
       color: yellow !important;
@@ -27,37 +32,20 @@
 </head>
 
 <body class=" background color: purple">
+  <main>
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
       <div class="container">
-        <a class="navbar-brand" href="#">Bootstrap</a>
-
-        <!-- <img src="./images/tablemountain.jpg" alt="Logo" width="55" height="50" class="float-end align-text-top"> -->
+        <a class="navbar-brand" href="./index.html">Home page</a>
       </div>
     </div>
   </nav>
   <br>
 
+  
+    <div class="container">
 
-
-  <div class="container">
-    <div class="col-md-6 text-center">
-      <h1 class="text-center" style="color: blue;">{{data.user.fullName}}</h1>
-    </div>
-
-
-    <div class="col-md-6 text-center">
-      <figure>
-        <img class="col-4 rounded text-center" width="300px" src="{{data.user.photo}}" alt="my picture" />
-      </figure>
-    </div>
-
-    <hr />
-
-
-    <main class="container">
-
-      <div class="row">
+      <div class="row" style="background-image: url(./images/tablemountain.jpg); margin: 1em">
         <div class="col-md-6">
           <h1 class="text-center ">{{user.fullName}}</h1>
         </div>
@@ -65,17 +53,19 @@
           <img src="{{user.photo}}" class="rounded col-md-5" alt="{{user.fullName}}">
         </div>
       </div>
+      <br>
 
       <div class="row">
         <h2>{{city.name}}</h2>
         <div class="text-center col-md-6">
-          <img src="{{city.photo}}" class="rounded col-md-5" alt="{{user.fullName}}">
+          <img src="{{city.photo}}" class="rounded col-md-12" alt="{{user.fullName}}">
         </div>
 
         <div class="col-md-5">
-          <p>{{city.description}}</p>
+          <p style="font-size: 19px">{{city.description}}</p>
         </div>
       </div>
+      <br>
 
       <div class="container">
         <h2 style="color:blue">{{foreignLanguage.language}}</h2>
@@ -110,13 +100,14 @@
         <h1>{{user.course}}</h1>
         <h3>{{user.institution}}</h3>
         <hr />
-      </div><br>
+      </div>
+      <br>
 
-      <h2 class="text-center" style="color: white">Favourite subjects</h2>
+      <h2 class="text-center">Favourite subjects</h2>
 
-      <div class="row" style="color: white">
+      <div class="row" >
         {{#each favouriteSubjects}}
-        <div class="cardd col-md-3 g-1 m-1">
+        <div class="card col-md-3 g-1 m-1">
           <div class="card-body">
             <h5 class="card-title text-center">{{this.name}}</h5>
             <hr>
@@ -127,7 +118,8 @@
         {{/each}}
 
       </div>
-
+    </div>
+    <br>
     </main>
 
 </body>

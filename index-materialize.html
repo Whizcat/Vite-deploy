@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> Thabo Martins</title>
+  <title> Thabo Martins Simon</title>
 
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,20 +20,21 @@
       /* color: black; */
     }
 
+    main{
+      background-color: rgba(255, 255, 255, 0.4)
+    }
 
     .textColor {
       color: yellow !important;
     }
   </style>
 </head>
-
+<main>
 <body class=" background color: purple">
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
       <div class="container">
-        <a class="navbar-brand" href="#">Materialize</a>
-
-        <!-- <img src="./images/tablemountain.jpg" alt="Logo" width="55" height="50" class="float-end align-text-top"> -->
+        <a class="navbar-brand" href="./index.html">Materialize</a>
       </div>
     </div>
   </nav>
@@ -43,47 +43,36 @@
 
 
   <div class="container">
-    <div class="col-md-6 text-center">
-      <h1 class="text-center" style="color: blue;">{{data.user.fullName}}</h1>
-    </div>
-
-
-    <div class="col-md-6 text-center">
-      <figure>
-        <img class="col-4 rounded text-center" width="250px" height="250px" src="{{data.user.photo}}" alt="my picture" />
-      </figure>
-    </div>
-
-    <hr />
-
-
-    <main class="container">
-
-      <div class="row">
-        <div class="col-md-6">
-          <h1 class="text-center ">{{user.fullName}}</h1>
+   
+      <div class="row" style="background-image: url(./images/tablemountain.jpg); margin: 1em">
+        <div class="col s12 m6">
+          <h1 class="center-align ">{{user.fullName}}</h1>
         </div>
-        <div class="text-center col-md-6">
-          <img width="250px" height="450px" src="{{user.photo}}" class="rounded col-md-5" alt="{{user.fullName}}">
+        <div class="center-align col s12 m6">
+          <img src="{{user.photo}}" class="rounded col s12 m7" alt="{{user.fullName}}">
         </div>
       </div>
+
+
 
       <div class="row">
         <h2>{{city.name}}</h2>
-        <div class="text-center col-md-6">
-          <img width="250px" src="{{city.photo}}" class="rounded col-md-5" alt="{{user.fullName}}">
+        <div class="center-align col s12 m6">
+          <img src="{{city.photo}}" class="rounded col m12" alt="{{city.name}}">
         </div>
 
-        <div class="col-md-5">
-          <p>{{city.description}}</p>
+        <div class="col s12 m5">
+          <p style="font-size: 19px">{{city.description}}</p>
         </div>
       </div>
 
-      <div class="container">
+
+
+      <div class="">
         <h2 style="color:blue">{{foreignLanguage.language}}</h2>
 
         
-        <table class="table table-dark table-striped">
+        <table class="centered striped #6b7478 grey darken-1">
 
           <thead>
             <tr>
@@ -109,30 +98,30 @@
 
       </div>
 
-      <div class="text-center">
+      <div class="center-align">
         <hr />
         <h1>{{user.course}}</h1>
         <h3>{{user.institution}}</h3>
         <hr />
       </div><br>
 
-      <h2 class="text-center" style="color: white">Favourite subjects</h2>
+      <h2 class="center-align" style="color: white">Favourite subjects</h2>
 
-      <div class="row" style="color: white">
+      <div class="row">
         {{#each favouriteSubjects}}
-        <div class="col  m4 l4">
-          <div class="card-body">
-            <h5 class="card-title text-center">{{this.name}}</h5>
-            <hr>
-            <p class="card-text">{{this.description}}</p>
-
+        <div class="col s12 m4" >
+          <div class="card blue-grey darken-1" style="height: 250px">
+            <div class="card-content white-text">
+              <span class="card-title">{{this.name}}</span>
+              <p>{{this.description}}</p>
+            </div>
           </div>
         </div>
         {{/each}}
-
       </div>
 
-    </main>
+    </div>
+  </main>
 
 </body>
 
